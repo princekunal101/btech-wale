@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTECH WALE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>BTECH WALE</h1>
+    <label class="switch">
+      <input type="checkbox" id="modeSwitch">
+      <span class="slider round"></span>
+    </label>
+  </header>
+  <div class="container">
+    <div class="semester" onclick="toggleSubjects('semester1')">Semester I</div>
+    <div class="semester-content" id="semester1">
+      <div class="subject" onclick="toggleUnits('bas-102')">Engineering Chemistry (BAS-102/BAS-bec-101)</div>
+      <div class="subject-content" id="bas-102">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-102/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-102/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-102/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-102/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-102/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <div class="subject" onclick="toggleUnits('bas-103')">Engineering Mathematics I (BAS 103)</div>
+      <div class="subject-content" id="bas-103">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-103/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-103/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-103/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-103/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-103/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <div class="subject" onclick="toggleUnits('bec-101')">Fundamental of Electronics Engineering (BEC-101/BEC-201)
+      </div>
+      <div class="subject-content" id="bec-101">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bec-101/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bec-101/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bec-101/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bec-101/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bec-101/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <div class="subject" onclick="toggleUnits('bme-101')">Fundamental of Machenical Engineering (BME-101/BME-201)
+      </div>
+      <div class="subject-content" id="bme-101">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bme-101/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bme-101/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bme-101/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bme-101/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bme-101/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <div class="subject" onclick="toggleUnits('bas-105')">Soft Skill (BAS-105/BAS-205)</div>
+      <div class="subject-content" id="bas-105">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-105/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-105/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-105/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-105/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-105/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <!-- Add more subjects -->
+    </div>
+
+    <!-- Semester 2-->
+    <div class="semester" onclick="toggleSubjects('semester2')">Semester II</div>
+    <div class="semester-content" id="semester2">
+      <div class="subject" onclick="toggleUnits('bas-201')">Engineering Physics (BAS-201/BAS101)</div>
+      <div class="subject-content" id="bas-201">
+        <div class="unit" onclick="downloadNotes('notes/semester2/bas-201/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester2/bas-201/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester2/bas-201/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester2/bas-201/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester2/bas-201/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <div class="subject" onclick="toggleUnits('bas-203')">Engineering Mathematics II (BAS-203)</div>
+      <div class="subject-content" id="bas-203">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-203/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-203/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-203/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-203/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-203/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <div class="subject" onclick="toggleUnits('bas-204')">Environment and Echology (BAS-204/BAS-104)</div>
+      <div class="subject-content" id="bas-204">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-204/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-204/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-204/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-204/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bas-204/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <div class="subject" onclick="toggleUnits('bee-201')">Fundamental of Electrical Engineering (BEE-201/BEE-102)
+      </div>
+      <div class="subject-content" id="bee-201">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bee-201/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bee-201/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bee-201/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bee-201/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bee-201/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <div class="subject" onclick="toggleUnits('bcs-101')">Programming for Problem Solving (BCS-201/BCS-101)</div>
+      <div class="subject-content" id="bcs-101">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-101/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-101/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-101/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-101/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-101/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <!-- Add more subjects -->
+    </div>
+    <!-- Add more semesters -->
+
+    <!-- semester 3-->
+    <div class="semester" onclick="toggleSubjects('semester3')">Semester III</div>
+    <div class="semester-content" id="semester3">
+      <div class="subject" onclick="toggleUnits('bcs-301')">Data Structure (BCS-301)</div>
+      <div class="subject-content" id="bcs-301">
+        <div class="unit" onclick="downloadNotes('notes/semester2/bcs-301/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester2/bcs-301/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester2/bcs-301/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester2/bcs-301/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester2/bcs-301/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+
+      <div class="subject" onclick="toggleUnits('bcs-302')">Computer Organisation & Architecture (BCS-302)</div>
+      <div class="subject-content" id="bcs-302">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-302/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-302/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-302/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-302/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-302/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <div class="subject" onclick="toggleUnits('bcs-303')">Discrete Structure & Theory of Logic (BCS-303)</div>
+      <div class="subject-content" id="bcs-303">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-303/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-303/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-303/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-303/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcs-303/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+
+      <div class="subject" onclick="toggleUnits('boe-039')">Digital Electronics (BOE-039/BOE-049)</div>
+      <div class="subject-content" id="boe-039">
+        <div class="unit" onclick="downloadNotes('notes/semester1/boe-039/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/boe-039/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/boe-039/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/boe-039/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/boe-039/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <div class="subject" onclick="toggleUnits('bve-301')">Universal Human Value and Professional Ethics (BVE-301/BVE-401)</div>
+      <div class="subject-content" id="bve-301">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bve-301/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bve-301/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bve-301/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bve-301/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bve-301/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <div class="subject" onclick="toggleUnits('bcc-302')">Python Programming (BCC-302/BCC-402)</div>
+      <div class="subject-content" id="bcc-302">
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcc-302/unit1.pdf')">Unit I</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcc-302/unit2.pdf')">Unit II</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcc-302/unit3.pdf')">Unit III</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcc-302/unit4.pdf')">Unit IV</div>
+        <div class="unit" onclick="downloadNotes('notes/semester1/bcc-302/unit5.pdf')">Unit V</div>
+        <!-- Add more units -->
+      </div>
+      <!-- Add more subjects -->
+    </div>
+  
+   <!-- semester 4-->
+   <div class="semester" onclick="toggleSubjects('semester4')">Semester IV</div>
+   <div class="semester-content" id="semester4">
+     <div class="subject" onclick="toggleUnits('bcs-401')">Operating System (BCS-401)</div>
+     <div class="subject-content" id="bcs-401">
+       <div class="unit" onclick="downloadNotes('notes/semester2/bcs-401/unit1.pdf')">Unit I</div>
+       <div class="unit" onclick="downloadNotes('notes/semester2/bcs-401/unit2.pdf')">Unit II</div>
+       <div class="unit" onclick="downloadNotes('notes/semester2/bcs-401/unit3.pdf')">Unit III</div>
+       <div class="unit" onclick="downloadNotes('notes/semester2/bcs-401/unit4.pdf')">Unit IV</div>
+       <div class="unit" onclick="downloadNotes('notes/semester2/bcs-401/unit5.pdf')">Unit V</div>
+       <!-- Add more units -->
+     </div>
+
+     <div class="subject" onclick="toggleUnits('bcs-402')">Theory of Automata & Formal Language (BCS-402)</div>
+     <div class="subject-content" id="bcs-402">
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcs-402/unit1.pdf')">Unit I</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcs-402/unit2.pdf')">Unit II</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcs-402/unit3.pdf')">Unit III</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcs-402/unit4.pdf')">Unit IV</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcs-402/unit5.pdf')">Unit V</div>
+       <!-- Add more units -->
+     </div>
+     <div class="subject" onclick="toggleUnits('bcs-403')">Object Oriented Programming with Java (BCS-403)</div>
+     <div class="subject-content" id="bcs-403">
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcs-403/unit1.pdf')">Unit I</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcs-403/unit2.pdf')">Unit II</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcs-403/unit3.pdf')">Unit III</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcs-403/unit4.pdf')">Unit IV</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcs-403/unit5.pdf')">Unit V</div>
+       <!-- Add more units -->
+     </div>
+
+     <div class="subject" onclick="toggleUnits('boe-049')">Digital Electronics (BOE-049/BOE-039)</div>
+     <div class="subject-content" id="boe-049">
+       <div class="unit" onclick="downloadNotes('notes/semester1/boe-039/unit1.pdf')">Unit I</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/boe-039/unit2.pdf')">Unit II</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/boe-039/unit3.pdf')">Unit III</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/boe-039/unit4.pdf')">Unit IV</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/boe-039/unit5.pdf')">Unit V</div>
+       <!-- Add more units -->
+     </div>
+     <div class="subject" onclick="toggleUnits('bve-401')">Universal Human Value and Professional Ethics (BVE-401/BVE-301)</div>
+     <div class="subject-content" id="bve-401">
+       <div class="unit" onclick="downloadNotes('notes/semester1/bve-301/unit1.pdf')">Unit I</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bve-301/unit2.pdf')">Unit II</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bve-301/unit3.pdf')">Unit III</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bve-301/unit4.pdf')">Unit IV</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bve-301/unit5.pdf')">Unit V</div>
+       <!-- Add more units -->
+     </div>
+     <div class="subject" onclick="toggleUnits('bcc-401')">Cyber Security (BCC-401/BCC-301)</div>
+     <div class="subject-content" id="bcc-401">
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcc-401/unit1.pdf')">Unit I</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcc-401/unit2.pdf')">Unit II</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcc-401/unit3.pdf')">Unit III</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcc-401/unit4.pdf')">Unit IV</div>
+       <div class="unit" onclick="downloadNotes('notes/semester1/bcc-401/unit5.pdf')">Unit V</div>
+       <!-- Add more units -->
+     </div>
+     <!-- Add more subjects -->
+   </div>
+ </div>
+
+
+  <script>
+    function toggleSubjects(semesterId) {
+      var semesterContent = document.getElementById(semesterId);
+      semesterContent.classList.toggle("show");
+    }
+
+    function toggleUnits(subjectId) {
+      var subjectContent = document.getElementById(subjectId);
+      subjectContent.classList.toggle("show");
+    }
+
+    function downloadNotes(filePath) {
+      // You can implement the download functionality here
+      window.open(filePath, '_blank');
+    }
+
+    var modeSwitch = document.getElementById('modeSwitch');
+    modeSwitch.addEventListener('change', function () {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+
+</html>
